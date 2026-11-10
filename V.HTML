@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Test</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            margin: 0;
+            padding: 32px 20px;
+            display: grid;
+            place-items: center;
+            background: #10131b;
+            color: #f4f6fb;
+            font-family: Arial, sans-serif;
+        }
+
+        main {
+            width: min(100%, 520px);
+            padding: 32px;
+            border: 1px solid #303747;
+            border-radius: 18px;
+            background: #191e29;
+            box-shadow: 0 20px 60px #0006;
+        }
+
+        h1 {
+            margin: 0 0 24px;
+            font-size: clamp(24px, 5vw, 32px);
+        }
+
+        #grades {
+            display: grid;
+            gap: 12px;
+        }
+
+        .grade {
+            display: flex;
+            justify-content: space-between;
+            gap: 16px;
+            padding: 16px;
+            border-radius: 12px;
+            background: #242b39;
+        }
+
+        .score {
+            color: #aab6cb;
+        }
+
+        #result {
+            margin-top: 20px;
+            padding: 16px;
+            border-left: 4px solid #65d69a;
+            border-radius: 8px;
+            background: #1d342b;
+            color: #a5f0c4;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>تجربة كود جافا سكربت</h1>
+        <section id="grades" aria-label="الدرجات"></section>
+        <p id="result" role="status" hidden></p>
+    </main>
+    <script src="try.js"></script>
+</body>
+</html>
